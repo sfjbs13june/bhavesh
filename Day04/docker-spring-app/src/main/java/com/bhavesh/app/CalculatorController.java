@@ -1,4 +1,4 @@
-package com.bhavesh.dockerspringapp;
+package com.bhavesh.app;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,20 +7,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
 
     @GetMapping("/Name")
-    public double Name(){
-        return Bhavesh;
+    public String Name(){
+        return "Bhavesh";
     }
-
-    @GetMapping("/age")
-    public double age(){
+    @GetMapping("/Age")
+    public double Age(){
         return 22;
     }
-
-    @GetMapping("/address")
-    public double address(){
-        return pune;
+    @GetMapping("/Address")
+    public String Address(){
+        return "Pune";
     }
-
 
 
 }
