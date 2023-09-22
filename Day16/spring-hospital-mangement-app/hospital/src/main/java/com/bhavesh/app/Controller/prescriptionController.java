@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class PatientController {
+public class PrescriptonController {
 
     private final DataRepository dataRepository;
     @Autowired
@@ -27,4 +27,5 @@ public class PatientController {
 
 
 }
+
 

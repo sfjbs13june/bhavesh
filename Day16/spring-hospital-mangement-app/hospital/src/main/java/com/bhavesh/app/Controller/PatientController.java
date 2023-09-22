@@ -1,7 +1,7 @@
 package com.bhavesh.app.Controller;
 
-import com.bhavesh.app.model.Patient;
-import com.bhavesh.app.repository.DataRepository;
+import com.hospital.bhavesh.app.model.Patient;
+import com.hospital.bhavesh.app.repository.DataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

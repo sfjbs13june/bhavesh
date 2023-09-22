@@ -1,12 +1,14 @@
 package com.bhavesh.app.Controller;
 
-import com.bhavesh.app.model.Patient;
-import com.bhavesh.app.repository.DataRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+
+
+        import com.bhavesh.app.model.Patient;
+        import com.bhavesh.app.repository.DataRepository;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class PatientController {
+public class DoctorController {
 
     private final DataRepository dataRepository;
     @Autowired
@@ -14,8 +16,8 @@ public class PatientController {
         this.dataRepository=dataRepository;
     }
 
-    @GetMapping("/myappointment")
-    public Patient getPatient(@RequestParam String name){
+    @GetMapping("/doctorappointment")
+    public Patient get(@RequestParam String name){
 
         return dataRepository.getPatient(name);
     }
@@ -27,4 +29,5 @@ public class PatientController {
 
 
 }
+
 
